@@ -61,11 +61,13 @@ class VideoServer:
             payload_size = struct.calcsize("L")
 
             while True:
-                print("asd")
+                
+
                 while len(data) < payload_size:
                     data += client_socket.recv(4096)
                     if not data:
                         break
+                   
                     
                 packed_msg_size = data[:payload_size]
                 data = data[payload_size:]
@@ -82,9 +84,12 @@ class VideoServer:
 
                 frame = pickle.loads(frame_data)
                 cv2.imshow(f'Video Stream {client_addr[0]}', frame)
-                
+                 
                 if cv2.waitKey(1) & 0xFF == ord('q') :
                     break
+
+                if cv2.getWindowProperty('image',cv2.WND_PROP_VISIBLE) < 1:        
+                        break 
 
         except Exception as e:
             self.logger.exception(f"Error in receive_video: {str(e)}")

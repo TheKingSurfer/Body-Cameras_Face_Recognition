@@ -88,3 +88,16 @@ struct.error: unpack requires a buffer of 4 bytes
 2023-11-11 15:48:08,318 - INFO - start:44 - Server listening on 0.0.0.0:8080
 2023-11-11 15:48:22,977 - INFO - start:48 - Client connected for video streaming
 2023-11-11 15:49:34,131 - INFO - receive_video:94 - Connection with 127.0.0.1 closed.
+2023-11-11 15:52:32,059 - INFO - start:48 - Client connected for video streaming
+2023-11-11 15:52:44,622 - INFO - receive_video:94 - Connection with 127.0.0.1 closed.
+2023-11-11 15:54:22,834 - INFO - start:48 - Client connected for video streaming
+2023-11-11 15:54:30,578 - ERROR - receive_video:90 - Error in receive_video: unpack requires a buffer of 4 bytes
+Traceback (most recent call last):
+  File "C:\Users\eitan\Desktop\Body-Cameras_Face_Recognition\server.py", line 73, in receive_video
+    data = data[payload_size:]
+               ^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2023-11-11 15:54:30,612 - INFO - receive_video:94 - Connection with 127.0.0.1 closed.
+2023-11-11 15:56:22,261 - INFO - start:44 - Server listening on 0.0.0.0:8080
+2023-11-11 15:56:25,855 - INFO - start:48 - Client connected for video streaming
+2023-11-11 15:56:25,858 - INFO - receive_video:96 - Connection with 127.0.0.1 closed.
