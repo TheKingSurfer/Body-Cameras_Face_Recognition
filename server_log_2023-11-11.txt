@@ -85,3 +85,6 @@ Traceback (most recent call last):
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 struct.error: unpack requires a buffer of 4 bytes
 2023-11-11 15:47:44,484 - INFO - receive_video:93 - Connection with 127.0.0.1 closed.
+2023-11-11 15:48:08,318 - INFO - start:44 - Server listening on 0.0.0.0:8080
+2023-11-11 15:48:22,977 - INFO - start:48 - Client connected for video streaming
+2023-11-11 15:49:34,131 - INFO - receive_video:94 - Connection with 127.0.0.1 closed.
