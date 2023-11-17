@@ -9,7 +9,7 @@ def video_sender(server_ip='127.0.0.1', server_port=9090):
     client_socket.connect((server_ip, server_port))
 
     # Open a video file for reading frames
-    video = cv2.VideoCapture(r"Bill Hader channels Tom Cruise [DeepFake].mp4")
+    video = cv2.VideoCapture(r"../Bill Hader channels Tom Cruise [DeepFake].mp4")
     print("Heyy")
 
     while True:
